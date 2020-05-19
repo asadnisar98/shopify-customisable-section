@@ -1,0 +1,92 @@
+
+
+<div class="container-h">   
+  <h1>hello</h1>  
+  <h1>welcom,e</h1>   
+  <h1>nope</h1> 
+  <h1>damn</h1> 
+   <h1>hello</h1>  
+  <h1>welcom,e</h1>   
+  <h1>nope</h1> 
+  <h1>damn</h1>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Image Grid",
+    "settings": [
+			{
+				"type": "text",
+				"id": "heading",
+				"label": "heading"
+
+
+			},
+			{
+				"type": "text",
+				"id": "description",
+				"label": "description"
+
+
+			}	
+
+		],
+	"blocks":[
+				{
+				"type": "image-grid",
+				"name": "image-grid",
+				"settings":[ 
+							{
+							"type": "text",
+							"id": "title",
+							"label": "title"
+
+
+							},
+
+							{
+							"type": "image_picker",
+							"id": "image",
+							"label": "Our Image"
+
+
+							},
+                            {
+							"type": "url",
+							"id": "link",
+							"label": "Target Location"
+							}
+
+							]
+					
+
+				}
+
+		],
+
+
+	"presets" : [
+	{
+		"name" : "Image Grid",
+		"category" : "Custom"
+	}
+	]
+
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+
+.container-h {    display: flex;    overflow-x: auto;}
+
+
+{% endstylesheet %}
+
+{% javascript %}
+
+
+{% endjavascript %}
